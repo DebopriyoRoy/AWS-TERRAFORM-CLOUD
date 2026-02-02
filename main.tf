@@ -151,7 +151,9 @@ resource "aws_instance" "Terraform_instance" {
     host        = self.public_ip
   }
 
-  provisioner "local-exec" {
+## when running REMOTE BACKEND then we need to COMMENT-OUT this part
+
+  provisioner "local-exec" {        
     command = "powershell -Command \"icacls ${local_file.private_key_pem.filename} /inheritance:r; icacls ${local_file.private_key_pem.filename} /grant:r $($env:USERNAME):R\""
   }
 
@@ -454,4 +456,5 @@ resource "aws_subnet" "variables-subnet" {
 for var.variables_sub_auto_ip, type in "true" and press enter
 for var.variables_sub_az, type in "us-east-1a" and press enter
 for var.variables_sub_cidr, type in "10.0.250.0/24" and press enter
+
 */
