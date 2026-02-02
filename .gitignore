@@ -1,0 +1,25 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Secrets / generated keys
+*.pem
+*.key
+
+# Variable files (often contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Local logs
+Terraform-cloud-assessment-log.txt
