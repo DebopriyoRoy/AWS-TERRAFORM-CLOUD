@@ -25,6 +25,9 @@ terraform {
 
   }
 }
+
+## when running the REMOTE BACKEND we need to ACTIVATE/UN-COMMENT this part
+
 /*terraform {
  backend "remote" {
     hostname = "app.terraform.io"
@@ -57,4 +60,5 @@ provider "tls" {
 }
 provider "local" {
   # Configuration options
+
 }
