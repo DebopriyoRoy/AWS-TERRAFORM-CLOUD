@@ -1,7 +1,7 @@
 # Terraform Learning (AWS)
 
 Full documentation website:
-👉 https://debopriyoroy.github.io/terraform-learning/
+👉 https://debopriyoroy.github.io/AWS-TERRAFORM-CLOUD/
 
 This project provisions AWS infrastructure for learning purposes, including:
 - VPC, public/private subnets, route tables, IGW, NAT Gateway
